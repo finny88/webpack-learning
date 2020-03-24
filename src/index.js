@@ -1,3 +1,7 @@
+import get from "lodash/get";
+import join from "lodash/join";
+import { cube } from "./math.js";
+
 function component() {
   const element = document.createElement("div");
 
@@ -5,7 +9,10 @@ function component() {
   const br = document.createElement("br");
 
   button.innerHTML = "Click me and look at the console!";
-  element.innerHTML = join(["Hello", "webpack"], " ");
+  element.innerHTML = join(
+    ["Hello", "webpack", "5 cubed is equal to " + cube(5)],
+    " "
+  );
   element.appendChild(br);
   element.appendChild(button);
 

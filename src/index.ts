@@ -1,6 +1,5 @@
-import get from "lodash/get";
 import join from "lodash/join";
-import { cube } from "./math.js";
+import { cube } from "./math";
 
 function component() {
   const element = document.createElement("div");
